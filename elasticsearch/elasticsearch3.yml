@@ -1,0 +1,10 @@
+node.name: node3
+network.host: 0.0.0.0
+cluster.name: elasticsearch_cluster
+node.master: true
+node.data: true
+discovery.zen.ping.unicast.hosts: ['192.168.1.12:9301', '192.168.1.12:9302', '192.168.1.12:9303']
+discovery.zen.minimum_master_nodes: 2
+http.port: 9203
+transport.tcp.port: 9303
+cluster.initial_master_nodes: node1
